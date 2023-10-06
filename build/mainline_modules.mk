@@ -51,7 +51,6 @@ PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES=vendor/partner_modules/build/certific
 PRODUCT_PACKAGES += \
     GoogleDocumentsUIOverlay \
     ModuleMetadataGoogleOverlay \
-    GooglePermissionControllerOverlay \
     GooglePermissionControllerFrameworkOverlay \
     GoogleExtServicesConfigOverlay \
     CaptivePortalLoginFrameworkOverlay \

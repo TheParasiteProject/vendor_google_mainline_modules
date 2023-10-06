@@ -38,6 +38,5 @@ PRODUCT_PACKAGES += \
 	CaptivePortalLoginOverlayExtra \
 	CellBroadcastReceiverOverlayExtra \
 	CellBroadcastServiceOverlayExtra \
-	GoogleConfigOverlayExtra \
-	GooglePermissionControllerOverlayExtra
+	GoogleConfigOverlayExtra
 endif
