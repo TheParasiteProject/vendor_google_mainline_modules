@@ -1,0 +1,43 @@
+prebuilt_etc {
+    name: "GoogleDocumentsUI_permissions.xml",
+    src: "GoogleDocumentsUI_permissions.xml",
+    sub_dir: "permissions",
+}
+
+prebuilt_etc {
+    name: "GoogleCellBroadcast_config.xml",
+    src: "GoogleCellBroadcast_config.xml",
+    product_specific: true,
+    sub_dir: "sysconfig",
+}
+
+prebuilt_etc {
+    name: "GoogleExtServices_permissions.xml",
+    src: "GoogleExtServices_permissions.xml",
+    sub_dir: "permissions",
+}
+
+prebuilt_etc {
+    name: "GoogleNetworkStack_permissions.xml",
+    src: "GoogleNetworkStack_permissions.xml",
+    sub_dir: "permissions",
+}
+
+prebuilt_etc {
+    name: "GooglePermissionController_permissions.xml",
+    src: "GooglePermissionController_permissions.xml",
+    sub_dir: "permissions",
+}
+
+prebuilt_etc {
+    name: "google-staged-installer-whitelist.xml",
+    src: "google-staged-installer-whitelist.xml",
+    product_specific: true,
+    sub_dir: "sysconfig",
+}
+
+prebuilt_etc {
+      name: "preinstalled-packages-com.google.android.providers.media.module.xml",
+      src: "preinstalled-packages-com.google.android.providers.media.module.xml",
+      sub_dir: "sysconfig",
+}
