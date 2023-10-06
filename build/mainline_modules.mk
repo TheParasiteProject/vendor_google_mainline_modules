@@ -81,9 +81,9 @@ SOONG_CONFIG_NAMESPACES += uwb_module
 SOONG_CONFIG_uwb_module += source_build
 SOONG_CONFIG_uwb_module_source_build := true
 
-SOONG_CONFIG_NAMESPACES += bluetooth_module
-SOONG_CONFIG_bluetooth_module += source_build
-SOONG_CONFIG_bluetooth_module_source_build := true
+SOONG_CONFIG_NAMESPACES += btservices_module
+SOONG_CONFIG_btservices_module += source_build
+SOONG_CONFIG_btservices_module_source_build := true
 
 SOONG_CONFIG_NAMESPACES += virt_module
 SOONG_CONFIG_virt_module += source_build
@@ -114,14 +114,14 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.art.apex
 
 # Optional Bluetooth
-MAINLINE_INCLUDE_BLUETOOTH_MODULE ?= false
-ifeq ($(MAINLINE_INCLUDE_BLUETOOTH_MODULE),true)
-SOONG_CONFIG_bluetooth_module_source_build := false
+MAINLINE_INCLUDE_BTSERVICES_MODULE ?= false
+ifeq ($(MAINLINE_INCLUDE_BTSERVICES_MODULE),true)
+SOONG_CONFIG_btservices_module_source_build := false
 
 PRODUCT_PACKAGES += \
-    com.google.android.bluetooth
+    com.google.android.btservices
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/apex/com.google.android.bluetooth.apex
+    system/apex/com.google.android.btservices.apex
 endif
 
 # CellBroadcast
@@ -149,10 +149,10 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.resolv.apex
 
 # DeviceLock
-PRODUCT_PACKAGES += \
-    com.google.android.devicelock
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/apex/"com.google.android.devicelock.apex
+#PRODUCT_PACKAGES += \
+#    com.google.android.devicelock
+#PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+#    system/apex/com.google.android.devicelock.apex
 
 # ExtServices - apex
 PRODUCT_PACKAGES += \
