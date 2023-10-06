@@ -160,8 +160,8 @@ prebuilt_apex {
     owner: "google",
     src: "proprietary/system/apex/com.google.android.devicelock.apex",
     overrides: ["com.android.devicelock"],
-    exported_bootclasspath_fragments: ["com.android.devicelock-bootclasspath-fragment"],
-    exported_systemserverclasspath_fragments: ["com.android.devicelock-systemserverclasspath-fragment"],
+//    exported_bootclasspath_fragments: ["com.android.devicelock-bootclasspath-fragment"],
+//    exported_systemserverclasspath_fragments: ["com.android.devicelock-systemserverclasspath-fragment"],
 }
 
 // ExtServicesPrebuilt
@@ -361,7 +361,7 @@ prebuilt_apex {
     owner: "google",
     src: "proprietary/system/apex/com.google.android.virt.apex",
     overrides: ["com.android.virt"],
-    exported_bootclasspath_fragments: ["com.android.virt-bootclasspath-fragment"],
+//    exported_bootclasspath_fragments: ["com.android.virt-bootclasspath-fragment"],
 }
 
 // WiFiPrebuilt
