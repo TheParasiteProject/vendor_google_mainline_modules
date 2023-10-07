@@ -9,7 +9,7 @@
 set -e
 
 DEVICE=common
-VENDOR=partner_modules
+VENDOR=mainline_modules
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

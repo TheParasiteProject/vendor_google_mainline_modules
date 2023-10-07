@@ -9,7 +9,7 @@
 set -e
 
 DEVICE=common
-VENDOR=partner_modules
+VENDOR=mainline_modules
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -30,8 +30,8 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" true
 # Warning headers and guards
 write_headers "arm64"
 sed -i 's|TARGET_DEVICE|TARGET_ARCH|g' "${ANDROIDMK}"
-sed -i 's|vendor/partner_modules/|vendor/partner_modules/common|g' "${PRODUCTMK}"
-sed -i 's|device/partner_modules//setup-makefiles.sh|vendor/partner_modules/setup-makefiles.sh|g' "${ANDROIDBP}" "${ANDROIDMK}" "${BOARDMK}" "${PRODUCTMK}"
+sed -i 's|vendor/mainline_modules/|vendor/mainline_modules/common|g' "${PRODUCTMK}"
+sed -i 's|device/mainline_modules//setup-makefiles.sh|vendor/mainline_modules/setup-makefiles.sh|g' "${ANDROIDBP}" "${ANDROIDMK}" "${BOARDMK}" "${PRODUCTMK}"
 
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 

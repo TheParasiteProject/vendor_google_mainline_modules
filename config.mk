@@ -21,7 +21,7 @@ ifneq ($(MAINLINE_INCLUDE_VIRT_MODULE), false)
 MAINLINE_INCLUDE_VIRT_MODULE := true
 endif
 
-$(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules.mk)
+$(call inherit-product-if-exists, vendor/mainline_modules/build/mainline_modules.mk)
 
 ifeq ($(TARGET_SUPPORTS_NOW_PLAYING), true)
 PRODUCT_PACKAGES += \

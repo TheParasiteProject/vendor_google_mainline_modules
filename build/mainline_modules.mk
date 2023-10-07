@@ -33,7 +33,7 @@
 #
 
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/partner_modules/common
+    vendor/mainline_modules/common
 
 # Mainline modules - APK type
 PRODUCT_PACKAGES += \
@@ -45,7 +45,7 @@ PRODUCT_PACKAGES += \
 #    com.google.mainline.adservices \
 
 # Ingesting networkstack.x509.pem
-PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES=vendor/partner_modules/build/certificates
+PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES=vendor/mainline_modules/build/certificates
 
 # Overlay packages for APK-type modules
 PRODUCT_PACKAGES += \
