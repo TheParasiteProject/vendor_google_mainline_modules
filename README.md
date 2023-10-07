@@ -1,1 +1,1 @@
-# vendor_partner_modules
+# vendor_mainline_modules
