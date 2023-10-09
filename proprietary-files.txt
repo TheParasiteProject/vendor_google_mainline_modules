@@ -64,3 +64,6 @@ product/app/PrebuiltGoogleAdservicesTvp/PrebuiltGoogleAdservicesTvp.apk;PRESIGNE
 # Diagnostics/Telemetry
 product/app/PrebuiltGoogleTelemetryTvp/PrebuiltGoogleTelemetryTvp.apk;PRESIGNED
 product/priv-app/HelpRtcPrebuilt/HelpRtcPrebuilt.apk;PRESIGNED
+
+# Permissions
+product/etc/sysconfig/google-install-constraints-package-allowlist.xml
