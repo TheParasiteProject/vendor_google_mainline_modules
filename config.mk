@@ -18,6 +18,10 @@ MAINLINE_INCLUDE_BTSERVICES_MODULE := true
 # Overlay
 PRODUCT_PACKAGES += \
 	GoogleConfigBluetoothOverlay
+
+# Google Bluetooth Legacy Migration
+PRODUCT_PACKAGES += \
+	GoogleBluetoothLegacyMigration
 endif
 
 ifneq ($(MAINLINE_INCLUDE_VIRT_MODULE), false)
