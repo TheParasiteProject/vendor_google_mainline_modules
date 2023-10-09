@@ -149,10 +149,10 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.resolv.apex
 
 # DeviceLock
-#PRODUCT_PACKAGES += \
-#    com.google.android.devicelock
-#PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-#    system/apex/com.google.android.devicelock.apex
+PRODUCT_PACKAGES += \
+    com.google.android.devicelock
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/apex/com.google.android.devicelock.apex
 
 # ExtServices - apex
 PRODUCT_PACKAGES += \
