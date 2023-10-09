@@ -41,8 +41,9 @@ PRODUCT_PACKAGES += \
     DocumentsUIGoogle \
     CaptivePortalLoginGoogle \
     NetworkStackGoogle \
-#    com.google.mainline.telemetry \
-#    com.google.mainline.adservices
+    HelpRtcPrebuilt \
+    PrebuiltGoogleAdservicesTvp \
+    PrebuiltGoogleTelemetryTvp
 
 # Ingesting networkstack.x509.pem
 PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES=vendor/mainline_modules/build/certificates
@@ -53,7 +54,14 @@ PRODUCT_PACKAGES += \
     ModuleMetadataGoogleOverlay \
     GooglePermissionControllerFrameworkOverlay \
     GoogleExtServicesConfigOverlay \
+    CaptivePortalLoginOverlay \
     CaptivePortalLoginFrameworkOverlay
+
+# Overlay packages for APEX-type modules
+PRODUCT_PACKAGES += \
+    CellBroadcastReceiverOverlay \
+    CellBroadcastServiceOverlay \
+    GoogleMediaProviderOverlay
 
 # Additional Overlays
 PRODUCT_PACKAGES += \
@@ -269,6 +277,11 @@ PRODUCT_PACKAGES += \
     com.google.android.wifi
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.wifi.apex
+
+PRODUCT_PACKAGES += \
+    GoogleConnectivityOverlay \
+    GoogleNetworkStackOverlay \
+    GoogleTetheringOverlay
 endif
 
 # sysconfig files

@@ -41,7 +41,7 @@ endif
 # Overlay
 PRODUCT_PACKAGES += \
 	ApexSettingsOverlay \
-	PixelDocumentsUIGoogleOverlayExtra \
+	DocumentsUIGoogleOverlayExtra \
 	CaptivePortalLoginOverlayExtra \
 	CellBroadcastReceiverOverlayExtra \
 	CellBroadcastServiceOverlayExtra \

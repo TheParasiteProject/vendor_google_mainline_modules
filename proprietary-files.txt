@@ -48,5 +48,17 @@ system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk;OVERRIDES=Capti
 
 # Overlays
 product/overlay/CaptivePortalLoginOverlay/CaptivePortalLoginOverlay.apk:product/overlay/CaptivePortalLoginOverlay.apk
+product/overlay/CellBroadcastReceiverOverlay/CellBroadcastReceiverOverlay.apk:product/overlay/CellBroadcastReceiverOverlay.apk
+product/overlay/CellBroadcastServiceOverlay/CellBroadcastServiceOverlay.apk:product/overlay/CellBroadcastServiceOverlay.apk
 product/overlay/GooglePermissionControllerOverlay.apk
-product/overlay/NetworkStackOverlay.apk
+product/overlay/MediaProviderOverlay/MediaProviderOverlay.apk:product/overlay/GoogleMediaProviderOverlay.apk
+product/overlay/NetworkStackOverlay.apk:product/overlay/GoogleNetworkStackOverlay.apk
+product/overlay/PixelConnectivityOverlay2022.apk:product/overlay/GoogleConnectivityOverlay.apk
+product/overlay/PixelTetheringOverlay2021.apk:product/overlay/GoogleTetheringOverlay.apk
+
+# AdServices
+product/app/PrebuiltGoogleAdservicesTvp/PrebuiltGoogleAdservicesTvp.apk;PRESIGNED
+
+# Diagnostics/Telemetry
+product/app/PrebuiltGoogleTelemetryTvp/PrebuiltGoogleTelemetryTvp.apk;PRESIGNED
+product/priv-app/HelpRtcPrebuilt/HelpRtcPrebuilt.apk;PRESIGNED
