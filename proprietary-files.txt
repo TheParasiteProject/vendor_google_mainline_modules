@@ -55,6 +55,8 @@ product/overlay/MediaProviderOverlay/MediaProviderOverlay.apk:product/overlay/Go
 product/overlay/NetworkStackOverlay.apk:product/overlay/GoogleNetworkStackOverlay.apk
 product/overlay/PixelConnectivityOverlay2022.apk:product/overlay/GoogleConnectivityOverlay.apk
 product/overlay/PixelTetheringOverlay2021.apk:product/overlay/GoogleTetheringOverlay.apk
+product/overlay/GoogleDeviceLockControllerOverlay.apk
+product/overlay/GoogleHealthConnectOverlay.apk
 
 # AdServices
 product/app/PrebuiltGoogleAdservicesTvp/PrebuiltGoogleAdservicesTvp.apk;PRESIGNED
