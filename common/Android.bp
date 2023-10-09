@@ -9,7 +9,7 @@ android_app_import {
 	name: "CaptivePortalLoginGoogle",
 	owner: "mainline_modules",
 	apk: "proprietary/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk",
-	overrides: ["CaptivePortalLoginGoogle.apk"],
+	overrides: ["CaptivePortalLogin.apk"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -42,6 +42,7 @@ android_app_import {
 	name: "NetworkStackGoogle",
 	owner: "mainline_modules",
 	apk: "proprietary/system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk",
+	overrides: ["NetworkStack"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,

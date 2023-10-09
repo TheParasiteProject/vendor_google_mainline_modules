@@ -41,10 +41,10 @@ system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk;OVERRIDES=DocumentsUI;PR
 product/app/ModuleMetadataGoogle/ModuleMetadataGoogle.apk;OVERRIDES=ModulesMetadata;PRESIGNED
 
 # Intelligence
-system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk;PRESIGNED
+system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk;OVERRIDES=NetworkStack;PRESIGNED
 
 # Captive Portal Login Google
-system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk;OVERRIDES=CaptivePortalLoginGoogle.apk;PRESIGNED
+system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk;OVERRIDES=CaptivePortalLogin.apk;PRESIGNED
 
 # Overlays
 product/overlay/CaptivePortalLoginOverlay/CaptivePortalLoginOverlay.apk:product/overlay/CaptivePortalLoginOverlay.apk
