@@ -42,7 +42,7 @@ PRODUCT_PACKAGES += \
     CaptivePortalLoginGoogle \
     NetworkStackGoogle \
 #    com.google.mainline.telemetry \
-#    com.google.mainline.adservices \
+#    com.google.mainline.adservices
 
 # Ingesting networkstack.x509.pem
 PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES=vendor/mainline_modules/build/certificates
@@ -53,7 +53,7 @@ PRODUCT_PACKAGES += \
     ModuleMetadataGoogleOverlay \
     GooglePermissionControllerFrameworkOverlay \
     GoogleExtServicesConfigOverlay \
-    CaptivePortalLoginFrameworkOverlay \
+    CaptivePortalLoginFrameworkOverlay
 
 # Additional Overlays
 PRODUCT_PACKAGES += \
@@ -66,7 +66,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Mainline modules - APEX type
 PRODUCT_PACKAGES += \
     com.google.mainline.primary.libs \
-    com.google.android.tzdata5 \
+    com.google.android.tzdata5
 
 # adding compressed APEX based on options
 
@@ -91,9 +91,9 @@ SOONG_CONFIG_virt_module_source_build := true
 
 # Adbd
 PRODUCT_PACKAGES += \
-    com.google.android.adbd_trimmed
+    com.google.android.adbd
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/apex/com.google.android.adbd_trimmed.apex
+    system/apex/com.google.android.adbd.apex
 
 # AdServices
 PRODUCT_PACKAGES += \
@@ -283,7 +283,7 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/etc/permissions/GoogleDocumentsUI_permissions.xml \
     system/etc/permissions/GoogleNetworkStack_permissions.xml \
     system/etc/sysconfig/preinstalled-packages-com.google.android.providers.media.module.xml \
-    system/apex/com.google.android.tzdata5.apex \
+    system/apex/com.google.android.tzdata5.apex
 
 # arm
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
@@ -292,10 +292,10 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/framework/arm/%.vdex \
     system/framework/arm64/%.art \
     system/framework/arm64/%.oat \
-    system/framework/arm64/%.vdex \
+    system/framework/arm64/%.vdex
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/framework/oat/arm/%.odex \
     system/framework/oat/arm/%.vdex \
     system/framework/oat/arm64/%.odex \
-    system/framework/oat/arm64/%.vdex \
+    system/framework/oat/arm64/%.vdex
