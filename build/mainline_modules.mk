@@ -245,6 +245,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.tethering.apex
 
+PRODUCT_PACKAGES += \
+    GoogleTetheringOverlay
+
 # Optional Uwb
 MAINLINE_INCLUDE_UWB_MODULE ?= false
 ifeq ($(MAINLINE_INCLUDE_UWB_MODULE),true)
@@ -282,8 +285,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     GoogleConnectivityOverlay \
-    GoogleNetworkStackOverlay \
-    GoogleTetheringOverlay
+    GoogleNetworkStackOverlay
 endif
 
 # sysconfig files
