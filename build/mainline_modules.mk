@@ -40,7 +40,6 @@ PRODUCT_PACKAGES += \
     ModuleMetadataGoogle \
     DocumentsUIGoogle \
     CaptivePortalLoginGoogle \
-    NetworkStackGoogle \
     HelpRtcPrebuilt \
     PrebuiltGoogleAdservicesTvp \
     PrebuiltGoogleTelemetryTvp
@@ -277,6 +276,9 @@ PRODUCT_PACKAGES += \
     com.google.android.wifi
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.wifi.apex
+
+PRODUCT_PACKAGES += \
+    NetworkStackGoogle
 
 PRODUCT_PACKAGES += \
     GoogleConnectivityOverlay \
