@@ -41,3 +41,9 @@ prebuilt_etc {
       src: "preinstalled-packages-com.google.android.providers.media.module.xml",
       sub_dir: "sysconfig",
 }
+
+prebuilt_etc {
+      name: "google-install-constraints-package-allowlist.xml",
+      src: "google-install-constraints-package-allowlist.xml",
+      sub_dir: "sysconfig",
+}

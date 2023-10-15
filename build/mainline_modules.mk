@@ -290,15 +290,27 @@ endif
 
 # sysconfig files
 PRODUCT_PACKAGES += \
-    google-staged-installer-whitelist.xml
+    google-install-constraints-package-allowlist.xml \
+    google-staged-installer-whitelist.xml \
+    GoogleCellBroadcast_config.xml \
+    GoogleDocumentsUI_permissions.xml \
+    GoogleExtServices_permissions.xml \
+    GoogleNetworkStack_permissions.xml \
+    GooglePermissionController_permissions.xml \
+    preinstalled-packages-com.google.android.providers.media.module.xml
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.mainline.primary.libs.apex \
     system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk \
     system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk \
     system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk \
+    system/etc/permissions/GoogleCellBroadcast_config.xml \
     system/etc/permissions/GoogleDocumentsUI_permissions.xml \
+    system/etc/permissions/GoogleExtServices_permissions.xml \
     system/etc/permissions/GoogleNetworkStack_permissions.xml \
+    system/etc/permissions/GooglePermissionController_permissions.xml \
+    system/etc/sysconfig/google-install-constraints-package-allowlist.xml \
+    system/etc/sysconfig/google-staged-installer-whitelist.xml \
     system/etc/sysconfig/preinstalled-packages-com.google.android.providers.media.module.xml \
     system/apex/com.google.android.tzdata5.apex
 
