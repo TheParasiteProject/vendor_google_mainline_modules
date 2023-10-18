@@ -47,6 +47,9 @@ PRODUCT_PACKAGES += \
 # Ingesting networkstack.x509.pem
 PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES=vendor/mainline_modules/build/certificates
 
+# Additional sepolicies
+-include vendor/mainline_modules/build/sepolicy/sepolicy.mk
+
 # Overlay packages for APK-type modules
 PRODUCT_PACKAGES += \
     GoogleDocumentsUIOverlay \

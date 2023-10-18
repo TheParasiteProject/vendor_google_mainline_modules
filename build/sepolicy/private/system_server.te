@@ -1,0 +1,1 @@
+allow system_server staging_data_file:file { ioctl read getattr lock };

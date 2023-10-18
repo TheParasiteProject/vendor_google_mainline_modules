@@ -1,0 +1,1 @@
+allow installd staging_data_file:dir { add_name rename };
