@@ -44,7 +44,7 @@ product/app/ModuleMetadataGoogle/ModuleMetadataGoogle.apk;OVERRIDES=ModulesMetad
 system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk;OVERRIDES=NetworkStack;PRESIGNED
 
 # Captive Portal Login Google
-system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk;OVERRIDES=CaptivePortalLogin.apk;PRESIGNED
+system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk;OVERRIDES=CaptivePortalLogin;PRESIGNED
 
 # Overlays
 product/overlay/CaptivePortalLoginOverlay/CaptivePortalLoginOverlay.apk:product/overlay/CaptivePortalLoginOverlay.apk
