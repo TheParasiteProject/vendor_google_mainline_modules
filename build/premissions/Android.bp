@@ -12,20 +12,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "GoogleExtServices_permissions.xml",
-    src: "GoogleExtServices_permissions.xml",
-    sub_dir: "permissions",
-}
-
-prebuilt_etc {
     name: "GoogleNetworkStack_permissions.xml",
     src: "GoogleNetworkStack_permissions.xml",
-    sub_dir: "permissions",
-}
-
-prebuilt_etc {
-    name: "GooglePermissionController_permissions.xml",
-    src: "GooglePermissionController_permissions.xml",
     sub_dir: "permissions",
 }
 

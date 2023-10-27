@@ -294,9 +294,7 @@ PRODUCT_PACKAGES += \
     google-staged-installer-whitelist.xml \
     GoogleCellBroadcast_config.xml \
     GoogleDocumentsUI_permissions.xml \
-    GoogleExtServices_permissions.xml \
     GoogleNetworkStack_permissions.xml \
-    GooglePermissionController_permissions.xml \
     preinstalled-packages-com.google.android.providers.media.module.xml
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
