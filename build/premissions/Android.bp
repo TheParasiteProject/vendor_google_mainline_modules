@@ -7,7 +7,6 @@ prebuilt_etc {
 prebuilt_etc {
     name: "GoogleCellBroadcast_config.xml",
     src: "GoogleCellBroadcast_config.xml",
-    product_specific: true,
     sub_dir: "sysconfig",
 }
 
@@ -20,7 +19,6 @@ prebuilt_etc {
 prebuilt_etc {
     name: "google-staged-installer-whitelist.xml",
     src: "google-staged-installer-whitelist.xml",
-    product_specific: true,
     sub_dir: "sysconfig",
 }
 
