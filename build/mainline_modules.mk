@@ -268,6 +268,11 @@ PRODUCT_PACKAGES += \
     com.google.android.virt
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.virt.apex
+
+PRODUCT_PACKAGES += \
+    com.google.android.compos
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system_ext/apex/com.google.android.compos.apex
 endif
 
 # Optional WiFi

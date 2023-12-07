@@ -5,6 +5,14 @@
 soong_namespace {
 }
 
+prebuilt_apex {
+	name: "com.google.android.compos",
+	owner: "mainline_modules",
+	src: "proprietary/system_ext/apex/com.google.android.compos.apex",
+	filename: "com.google.android.compos.apex",
+	system_ext_specific: true,
+}
+
 android_app_import {
 	name: "CaptivePortalLoginGoogle",
 	owner: "mainline_modules",

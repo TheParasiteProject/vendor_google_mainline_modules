@@ -31,6 +31,9 @@ system/system/apex/com.google.android.virt.apex
 system/system/apex/com.google.android.wifi.apex
 system/system/apex/com.google.mainline.primary.libs.apex
 
+# Virtualization
+system_ext/apex/com.google.android.compos.apex
+
 # Google Bluetooth Legacy Migration
 system/app/GoogleBluetoothLegacyMigration/GoogleBluetoothLegacyMigration.apk;PRESIGNED
 
