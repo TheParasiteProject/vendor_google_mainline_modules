@@ -2,7 +2,7 @@
     package="com.android.overlay.apex.nowplaying"
     android:versionCode="1"
     android:versionName="1.0">
-    <overlay android:targetPackage="android" android:priority="1" android:isStatic="true" />
+    <overlay android:targetPackage="lineageos.platform" android:priority="1" android:isStatic="true" />
 
     <application android:label="ApexNowPlayingOverlay" android:hasCode="false"/>
 </manifest>
