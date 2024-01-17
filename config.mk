@@ -31,6 +31,11 @@ endif
 MAINLINE_INCLUDE_VIRT_MODULE ?= false
 ifneq ($(MAINLINE_INCLUDE_VIRT_MODULE), false)
 MAINLINE_INCLUDE_VIRT_MODULE := true
+
+$(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.boot.hypervisor.vm.supported=1 \
+    ro.boot.hypervisor.protected_vm.supported=1
 endif
 
 $(call inherit-product-if-exists, vendor/google/mainline_modules/build/mainline_modules.mk)
