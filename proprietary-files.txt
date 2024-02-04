@@ -40,8 +40,8 @@ system/app/GoogleBluetoothLegacyMigration/GoogleBluetoothLegacyMigration.apk;PRE
 # DocumentsUI Google
 system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk;OVERRIDES=DocumentsUI;PRESIGNED
 
-# ModulesMetadata Google
-product/app/ModuleMetadataGoogle/ModuleMetadataGoogle.apk;OVERRIDES=ModulesMetadata;PRESIGNED
+# ModuleMetadata Google
+product/app/ModuleMetadataGoogle/ModuleMetadataGoogle.apk;OVERRIDES=ModuleMetadata;PRESIGNED
 
 # Intelligence
 system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk;OVERRIDES=NetworkStack;PRESIGNED
