@@ -14,6 +14,7 @@
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider</item>
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryGarbageCollector</item>
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.reload.ModelReloadService</item>
+        <item>com.google.pixel.livewallpaper/com.google.pixel.livewallpaper.pokemon.wallpapers.PokemonWallpaper</item>
         <!-- Enable Google Play System Update -->
         <item>com.android.vending/com.google.android.finsky.systemupdate.SystemUpdateSettingsContentProvider</item>
         <item>com.android.vending/com.google.android.finsky.systemupdateactivity.SettingsSecurityEntryPoint</item>
