@@ -289,7 +289,6 @@ PRODUCT_PACKAGES += \
     NetworkStackGoogle
 
 PRODUCT_PACKAGES += \
-    GoogleConnectivityOverlay \
     GoogleNetworkStackOverlay
 endif
 

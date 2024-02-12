@@ -56,7 +56,6 @@ product/overlay/CellBroadcastServiceOverlay/CellBroadcastServiceOverlay.apk:prod
 product/overlay/GooglePermissionControllerOverlay.apk
 product/overlay/MediaProviderOverlay/MediaProviderOverlay.apk:product/overlay/GoogleMediaProviderOverlay.apk
 product/overlay/NetworkStackOverlay.apk:product/overlay/GoogleNetworkStackOverlay.apk
-product/overlay/PixelConnectivityOverlay2022.apk:product/overlay/GoogleConnectivityOverlay.apk
 product/overlay/GoogleDeviceLockControllerOverlay.apk
 product/overlay/GoogleHealthConnectOverlay.apk
 
