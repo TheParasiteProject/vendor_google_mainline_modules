@@ -52,7 +52,7 @@ android_app_import {
 	name: "NetworkStackGoogle",
 	owner: "mainline_modules",
 	apk: "proprietary/system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk",
-	overrides: ["NetworkStack"],
+	overrides: ["NetworkStack", "NetworkStackNext"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
