@@ -30,16 +30,9 @@ endif
 
 $(call inherit-product-if-exists, vendor/mainline_modules/build/mainline_modules.mk)
 
-ifeq ($(TARGET_SUPPORTS_NOW_PLAYING), true)
-PRODUCT_PACKAGES += \
-	ApexNowPlayingOverlay
-else
-PRODUCT_PACKAGES += \
-	ApexOverlay
-endif
-
 # Overlay
 PRODUCT_PACKAGES += \
+	ApexOverlay \
 	ApexSettingsOverlay \
 	DocumentsUIGoogleOverlayExtra \
 	CaptivePortalLoginOverlayExtra \
