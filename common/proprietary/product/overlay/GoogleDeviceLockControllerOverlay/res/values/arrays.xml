@@ -2,5 +2,6 @@
 <resources>
     <string-array name="lock_task_allowlist">
         <item>com.google.android.gms</item>
+        <item>com.google.android.apps.restore</item>
     </string-array>
 </resources>
