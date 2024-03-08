@@ -190,6 +190,9 @@ art_prebuilt_apex_set {
     owner: "google",
     src: "proprietary/system/apex/com.google.android.art.apex",
     overrides: [
+        "libsigchain",
+        "libnativeloader",
+        "libnativehelper",
         "com.android.art",
         "com.android.art.debug",
     ],
@@ -215,9 +218,6 @@ module_apex_prebuilt {
         "com.android.btservices",
         "com.android.btservices.debug",
     ],
-    required: ["android.hardware.bluetooth@1.1",
-               "android.hardware.bluetooth.audio@2.1",
-               "android.hardware.bluetooth.audio-V3-ndk"],
     prefer: true,
     soong_config_variables: {
         module_build_from_source: {
@@ -292,8 +292,8 @@ module_apex_prebuilt {
             prefer: false,
         },
     },
-//    exported_bootclasspath_fragments: ["com.android.devicelock-bootclasspath-fragment"],
-//    exported_systemserverclasspath_fragments: ["com.android.devicelock-systemserverclasspath-fragment"],
+    exported_bootclasspath_fragments: ["com.android.devicelock-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.devicelock-systemserverclasspath-fragment"],
 }
 
 // ExtServicesPrebuilt
