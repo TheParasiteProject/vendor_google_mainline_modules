@@ -20,6 +20,7 @@ android_app_import {
 	owner: "mainline_modules",
 	apk: "proprietary/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk",
 	overrides: ["CaptivePortalLogin"],
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -30,6 +31,7 @@ android_app_import {
 	name: "GoogleBluetoothLegacyMigration",
 	owner: "mainline_modules",
 	apk: "proprietary/system/app/GoogleBluetoothLegacyMigration/GoogleBluetoothLegacyMigration.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -41,6 +43,7 @@ android_app_import {
 	owner: "mainline_modules",
 	apk: "proprietary/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk",
 	overrides: ["DocumentsUI"],
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -53,6 +56,7 @@ android_app_import {
 	owner: "mainline_modules",
 	apk: "proprietary/system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk",
 	overrides: ["NetworkStack", "NetworkStackNext"],
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -65,6 +69,7 @@ android_app_import {
 	owner: "mainline_modules",
 	apk: "proprietary/product/app/ModuleMetadataGoogle/ModuleMetadataGoogle.apk",
 	overrides: ["ModuleMetadata"],
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -76,6 +81,7 @@ android_app_import {
 	name: "PrebuiltGoogleAdservicesTvp",
 	owner: "mainline_modules",
 	apk: "proprietary/product/app/PrebuiltGoogleAdservicesTvp/PrebuiltGoogleAdservicesTvp.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -87,6 +93,7 @@ android_app_import {
 	name: "PrebuiltGoogleTelemetryTvp",
 	owner: "mainline_modules",
 	apk: "proprietary/product/app/PrebuiltGoogleTelemetryTvp/PrebuiltGoogleTelemetryTvp.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -98,6 +105,7 @@ android_app_import {
 	name: "HelpRtcPrebuilt",
 	owner: "mainline_modules",
 	apk: "proprietary/product/priv-app/HelpRtcPrebuilt/HelpRtcPrebuilt.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
