@@ -9,13 +9,13 @@
 set -e
 
 DEVICE=common
-VENDOR=mainline_modules
+VENDOR=google/mainline_modules
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-ANDROID_ROOT="${MY_DIR}/../.."
+ANDROID_ROOT="${MY_DIR}/../../.."
 
 HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
@@ -30,8 +30,8 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" true
 # Warning headers and guards
 write_headers "arm64"
 sed -i 's|TARGET_DEVICE|TARGET_ARCH|g' "${ANDROIDMK}"
-sed -i 's|vendor/mainline_modules/|vendor/mainline_modules/common|g' "${PRODUCTMK}"
-sed -i 's|device/mainline_modules//setup-makefiles.sh|vendor/mainline_modules/setup-makefiles.sh|g' "${ANDROIDBP}" "${ANDROIDMK}" "${BOARDMK}" "${PRODUCTMK}"
+sed -i 's|vendor/google/mainline_modules/|vendor/google/mainline_modules/common|g' "${PRODUCTMK}"
+sed -i 's|device/google/mainline_modules//setup-makefiles.sh|vendor/google/mainline_modules/setup-makefiles.sh|g' "${ANDROIDBP}" "${ANDROIDMK}" "${BOARDMK}" "${PRODUCTMK}"
 
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 

@@ -1,4 +1,4 @@
-# vendor_mainline_modules
+# vendor_google_mainline_modules
 
 ## Initial setup
 - Install `xmlstarlet`

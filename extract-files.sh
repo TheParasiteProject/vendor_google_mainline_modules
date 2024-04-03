@@ -9,13 +9,13 @@
 set -e
 
 DEVICE=common
-VENDOR=mainline_modules
+VENDOR=google/mainline_modules
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-ANDROID_ROOT="${MY_DIR}/../.."
+ANDROID_ROOT="${MY_DIR}/../../.."
 
 HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then

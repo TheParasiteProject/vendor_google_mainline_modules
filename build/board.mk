@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-include vendor/mainline_modules/common/BoardConfigVendor.mk
+include vendor/google/mainline_modules/common/BoardConfigVendor.mk

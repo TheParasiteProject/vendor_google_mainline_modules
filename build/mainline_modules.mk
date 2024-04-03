@@ -33,7 +33,7 @@
 #
 
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/mainline_modules/common
+    vendor/google/mainline_modules/common
 
 # Mainline modules - APK type
 PRODUCT_PACKAGES += \
@@ -45,10 +45,10 @@ PRODUCT_PACKAGES += \
     PrebuiltGoogleTelemetryTvp
 
 # Ingesting networkstack.x509.pem
-PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES=vendor/mainline_modules/build/certificates
+PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES=vendor/google/mainline_modules/build/certificates
 
 # Additional sepolicies
--include vendor/mainline_modules/build/sepolicy/sepolicy.mk
+-include vendor/google/mainline_modules/build/sepolicy/sepolicy.mk
 
 # Overlay packages for APK-type modules
 PRODUCT_PACKAGES += \
