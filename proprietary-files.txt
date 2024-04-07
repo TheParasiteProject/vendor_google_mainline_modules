@@ -14,8 +14,8 @@ system/system/apex/com.google.android.extservices.apex
 system/system/apex/com.google.android.healthfitness.apex
 system/system/apex/com.google.android.ipsec.apex
 system/system/apex/com.google.android.media.apex
-system/system/apex/com.google.android.mediaprovider.apex
 system/system/apex/com.google.android.media.swcodec.apex
+system/system/apex/com.google.android.mediaprovider.apex
 system/system/apex/com.google.android.neuralnetworks.apex
 system/system/apex/com.google.android.ondevicepersonalization.apex
 system/system/apex/com.google.android.os.statsd.apex
@@ -53,11 +53,11 @@ system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk;OVERRIDES=Capti
 product/overlay/CaptivePortalLoginOverlay/CaptivePortalLoginOverlay.apk:product/overlay/CaptivePortalLoginOverlay.apk
 product/overlay/CellBroadcastReceiverOverlay/CellBroadcastReceiverOverlay.apk:product/overlay/CellBroadcastReceiverOverlay.apk
 product/overlay/CellBroadcastServiceOverlay/CellBroadcastServiceOverlay.apk:product/overlay/CellBroadcastServiceOverlay.apk
+product/overlay/GoogleDeviceLockControllerOverlay.apk
+product/overlay/GoogleHealthConnectOverlay.apk
 product/overlay/GooglePermissionControllerOverlay.apk
 product/overlay/MediaProviderOverlay/MediaProviderOverlay.apk:product/overlay/GoogleMediaProviderOverlay.apk
 product/overlay/NetworkStackOverlay.apk:product/overlay/GoogleNetworkStackOverlay.apk
-product/overlay/GoogleDeviceLockControllerOverlay.apk
-product/overlay/GoogleHealthConnectOverlay.apk
 
 # AdServices
 product/app/PrebuiltGoogleAdservicesTvp/PrebuiltGoogleAdservicesTvp.apk;PRESIGNED
