@@ -1,4 +1,5 @@
-ifneq ($(TARGET_SHIP_GMS),false)
+ifneq ($(WITH_GMS),false)
+
 # Anything including updatable_apex.mk should have done so by now.
 ifneq ($(TARGET_SUPPORTS_PREBUILT_UPDATABLE_APEX), false)
 
@@ -44,4 +45,5 @@ PRODUCT_PACKAGES += \
 	CellBroadcastServiceOverlayExtra \
 	GoogleConfigOverlayExtra
 endif
-endif
+
+endif #WITH_GMS
