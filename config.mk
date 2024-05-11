@@ -21,11 +21,11 @@ MAINLINE_INCLUDE_BTSERVICES_MODULE := true
 
 # Overlay
 PRODUCT_PACKAGES += \
-	GoogleConfigBluetoothOverlay
+    GoogleConfigBluetoothOverlay
 
 # Google Bluetooth Legacy Migration
 PRODUCT_PACKAGES += \
-	GoogleBluetoothLegacyMigration
+    GoogleBluetoothLegacyMigration
 endif
 
 MAINLINE_INCLUDE_VIRT_MODULE ?= false
@@ -37,20 +37,20 @@ $(call inherit-product-if-exists, vendor/google/mainline_modules/build/mainline_
 
 ifeq ($(TARGET_SUPPORTS_NOW_PLAYING), true)
 PRODUCT_PACKAGES += \
-	ApexNowPlayingOverlay
+    ApexNowPlayingOverlay
 else
 PRODUCT_PACKAGES += \
-	ApexOverlay
+    ApexOverlay
 endif
 
 # Overlay
 PRODUCT_PACKAGES += \
-	ApexSettingsOverlay \
-	DocumentsUIGoogleOverlayExtra \
-	CaptivePortalLoginOverlayExtra \
-	CellBroadcastReceiverOverlayExtra \
-	CellBroadcastServiceOverlayExtra \
-	GoogleConfigOverlayExtra
+    ApexSettingsOverlay \
+    DocumentsUIGoogleOverlayExtra \
+    CaptivePortalLoginOverlayExtra \
+    CellBroadcastReceiverOverlayExtra \
+    CellBroadcastServiceOverlayExtra \
+    GoogleConfigOverlayExtra
 endif
 
 endif #WITH_GMS
