@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Force enable components -->
+    <string-array name="config_forceEnabledComponents" translatable="false">
+        <!-- Enable Now Playing -->
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicDetectorReceiver</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicDetectorService</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.favorites.FavoritesReceiver</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.AddShortcutActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryGarbageCollector</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.InternalBroadcastReceiver</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.reload.ModelReloadService</item>
+        <!-- Enable Google Play System Update -->
+        <item>com.android.vending/com.google.android.finsky.systemupdate.SystemUpdateSettingsContentProvider</item>
+        <item>com.android.vending/com.google.android.finsky.systemupdateactivity.SettingsSecurityEntryPoint</item>
+        <item>com.android.vending/com.google.android.finsky.systemupdateactivity.SystemUpdateActivity</item>
+        <item>com.google.android.gms/com.google.android.gms.update.OtaSuggestionSummaryProvider</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateGcmTaskService</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
+    </string-array>
+</resources>
