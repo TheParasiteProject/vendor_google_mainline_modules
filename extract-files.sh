@@ -95,6 +95,7 @@ fi
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+extract "${MY_DIR}/proprietary-files-compos.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 
 rm -Rf "${MY_DIR}/${DEVICE}/proprietary/system/apex"
 mv "${MY_DIR}/${DEVICE}/proprietary/system/system/apex" "${MY_DIR}/${DEVICE}/proprietary/system/apex"

@@ -28,7 +28,6 @@ PRODUCT_PACKAGES += \
     GoogleBluetoothLegacyMigration
 endif
 
-MAINLINE_INCLUDE_VIRT_MODULE ?= false
 ifneq ($(MAINLINE_INCLUDE_VIRT_MODULE), false)
 MAINLINE_INCLUDE_VIRT_MODULE := true
 

@@ -7,14 +7,6 @@ soong_namespace {
 	],
 }
 
-prebuilt_apex {
-	name: "com.google.android.compos",
-	owner: "google/mainline_modules",
-	src: "proprietary/system_ext/apex/com.google.android.compos.apex",
-	filename: "com.google.android.compos.apex",
-	system_ext_specific: true,
-}
-
 android_app_import {
 	name: "CaptivePortalLoginGoogle",
 	owner: "google/mainline_modules",
@@ -597,7 +589,30 @@ module_apex_prebuilt {
     owner: "google",
     src: "proprietary/system/apex/com.google.android.virt.apex",
     overrides: ["com.android.virt"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
 //    exported_bootclasspath_fragments: ["com.android.virt-bootclasspath-fragment"],
+}
+
+// ComposPrebuilt
+module_apex_prebuilt {
+    name: "com.google.android.compos",
+    apex_name: "com.android.compos",
+    owner: "google",
+    src: "proprietary/system_ext/apex/com.google.android.compos.apex",
+    overrides: ["com.android.compos"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
+//    exported_systemserverclasspath_fragments: ["com.android.compos-systemserverclasspath-fragment"],
+    system_ext_specific: true,
 }
 
 // WiFiPrebuilt

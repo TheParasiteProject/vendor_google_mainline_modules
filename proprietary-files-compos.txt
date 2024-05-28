@@ -1,0 +1,4 @@
+# All unpinned blobs below are extracted from google/cheetah/cheetah:14/UP1A.231005.007.A1/10762838:user/release-keys
+
+# Virtualization
+system_ext/apex/com.google.android.compos.apex
