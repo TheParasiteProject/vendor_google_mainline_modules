@@ -3,4 +3,5 @@
     <string name="config_headlineFontFamily">google-sans</string>
     <string name="data_sharing_help_center_link">https://support.google.com/android?p=data_sharing</string>
     <string name="help_app_permissions">https://support.google.com/googleplay/answer/6270602</string>
+    <string name="help_url_action_disabled_by_restricted_settings">https://support.google.com/android/?p=restricted_settings</string>
 </resources>
