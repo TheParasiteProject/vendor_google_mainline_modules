@@ -19,8 +19,6 @@
 #   can support updatable APEX
 #
 # Flags for partners:
-#   MODULE_BUILD_FROM_SOURCE := true or false
-#   - controls whether to build Mainline modules from source or not
 #   MAINLINE_INCLUDE_UWB_MODULE := true or false
 #   - when it is true, UWB module will be added to PRODUCT_PACKAGES
 #   MAINLINE_INCLUDE_WIFI_MODULE := true or false
@@ -81,8 +79,6 @@ PRODUCT_PACKAGES += \
 # adding compressed APEX based on options
 
 # module_sdk and optional modules
-MODULE_BUILD_FROM_SOURCE ?= false
-
 SOONG_CONFIG_NAMESPACES += wifi_module
 SOONG_CONFIG_wifi_module += source_build
 SOONG_CONFIG_wifi_module_source_build := true
