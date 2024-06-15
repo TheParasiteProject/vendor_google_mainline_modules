@@ -1,0 +1,24 @@
+#
+# Copyright (C) 2024 TheParasiteProject
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+ 
+TARGET_RELEASE := $(shell grep "BUILD_ID" build/make/core/build_id.mk | tail -1 | cut -d '=' -f 2 | cut -d '.' -f 1 | tr '[:upper:]' '[:lower:]')
+
+# Get the directory for this file, and use that instead of a fixed path.
+local_dir := $(dir $(lastword $(MAKEFILE_LIST)))
+
+# Attach the flag value definitions to the various release configurations.
+$(call declare-release-config, $(TARGET_RELEASE), $(local_dir)build_config/$(TARGET_RELEASE).scl)
+
+local_dir :=
