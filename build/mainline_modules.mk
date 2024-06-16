@@ -79,21 +79,6 @@ PRODUCT_PACKAGES += \
 # adding compressed APEX based on options
 
 # module_sdk and optional modules
-SOONG_CONFIG_NAMESPACES += wifi_module
-SOONG_CONFIG_wifi_module += source_build
-SOONG_CONFIG_wifi_module_source_build := true
-
-SOONG_CONFIG_NAMESPACES += uwb_module
-SOONG_CONFIG_uwb_module += source_build
-SOONG_CONFIG_uwb_module_source_build := true
-
-SOONG_CONFIG_NAMESPACES += btservices_module
-SOONG_CONFIG_btservices_module += source_build
-SOONG_CONFIG_btservices_module_source_build := true
-
-SOONG_CONFIG_NAMESPACES += virt_module
-SOONG_CONFIG_virt_module += source_build
-SOONG_CONFIG_virt_module_source_build := true
 
 # Adbd
 PRODUCT_PACKAGES += \
@@ -122,8 +107,6 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 # Optional Bluetooth
 MAINLINE_INCLUDE_BTSERVICES_MODULE ?= false
 ifeq ($(MAINLINE_INCLUDE_BTSERVICES_MODULE),true)
-SOONG_CONFIG_btservices_module_source_build := false
-
 PRODUCT_PACKAGES += \
     com.google.android.btservices
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
@@ -247,8 +230,6 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 # Optional Uwb
 MAINLINE_INCLUDE_UWB_MODULE ?= false
 ifeq ($(MAINLINE_INCLUDE_UWB_MODULE),true)
-SOONG_CONFIG_uwb_module_source_build := false
-
 PRODUCT_PACKAGES += \
     com.google.android.uwb
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
@@ -258,8 +239,6 @@ endif
 # Optional Vitualization
 MAINLINE_INCLUDE_VIRT_MODULE ?= false
 ifeq ($(MAINLINE_INCLUDE_VIRT_MODULE),true)
-SOONG_CONFIG_virt_module_source_build := false
-
 PRODUCT_PACKAGES += \
     com.google.android.virt
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
@@ -274,8 +253,6 @@ endif
 # Optional WiFi
 MAINLINE_INCLUDE_WIFI_MODULE ?= false
 ifeq ($(MAINLINE_INCLUDE_WIFI_MODULE),true)
-SOONG_CONFIG_wifi_module_source_build := false
-
 PRODUCT_PACKAGES += \
     com.google.android.wifi
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
