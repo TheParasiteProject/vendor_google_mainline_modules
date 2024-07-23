@@ -23,5 +23,10 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateGcmTaskService</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
+        <!-- Search Engine Selector -->
+        <item>com.google.android.apps.setupwizard.searchselector/com.google.android.apps.setupwizard.searchselector.SUWDSEActivity</item>
+        <item>com.google.android.apps.setupwizard.searchselector/com.google.android.apps.setupwizard.searchselector.DSEActivity</item>
+        <item>com.google.android.apps.setupwizard.searchselector/com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService</item>
+        <item>com.google.android.apps.setupwizard.searchselector/com.google.android.build.data.PropertiesServiceHolder</item>
     </string-array>
 </resources>
