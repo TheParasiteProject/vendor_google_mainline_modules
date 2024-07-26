@@ -49,12 +49,10 @@ endif #TARGET_SUPPORTS_NOW_PLAYING
 
 # Overlay
 PRODUCT_PACKAGES += \
-    ApexSettingsOverlay \
     DocumentsUIGoogleOverlayExtra \
     CaptivePortalLoginOverlayExtra \
     CellBroadcastReceiverOverlayExtra \
-    CellBroadcastServiceOverlayExtra \
-    GoogleConfigOverlayExtra
+    CellBroadcastServiceOverlayExtra
 
 endif #TARGET_SUPPORTS_PREBUILT_UPDATABLE_APEX
 
