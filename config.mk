@@ -5,6 +5,9 @@ ifneq ($(TARGET_SUPPORTS_PREBUILT_UPDATABLE_APEX), false)
 
 DISABLE_DEXPREOPT_CHECK := true
 
+# Disable enforce-product-packages-exist check
+TARGET_DISABLE_EPPE := true
+
 # Setup build characteristics
 PRODUCT_INCLUDE_TAGS := com.android.mainline mainline_module_prebuilt_monthly_release
 
