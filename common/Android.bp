@@ -106,6 +106,15 @@ android_app_import {
 	product_specific: true,
 }
 
+prebuilt_etc_xml {
+	name: "google-install-constraints-package-allowlist",
+	owner: "google/mainline_modules",
+	src: "proprietary/product/etc/sysconfig/google-install-constraints-package-allowlist.xml",
+	filename_from_src: true,
+	sub_dir: "sysconfig",
+	product_specific: true,
+}
+
 // AdbdPrebuilt
 prebuilt_apex {
     name: "com.google.android.adbd",

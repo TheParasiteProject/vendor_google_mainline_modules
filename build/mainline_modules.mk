@@ -267,7 +267,7 @@ endif
 
 # sysconfig files
 PRODUCT_PACKAGES += \
-    google-install-constraints-package-allowlist.xml \
+    google-install-constraints-package-allowlist \
     GoogleCellBroadcast_config.xml \
     GoogleDocumentsUI_permissions.xml \
     GoogleNetworkStack_permissions.xml \
@@ -283,7 +283,6 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/etc/permissions/GoogleExtServices_permissions.xml \
     system/etc/permissions/GoogleNetworkStack_permissions.xml \
     system/etc/permissions/GooglePermissionController_permissions.xml \
-    system/etc/sysconfig/google-install-constraints-package-allowlist.xml \
     system/etc/sysconfig/preinstalled-packages-com.google.android.providers.media.module.xml \
     system/apex/com.google.android.tzdata5.apex
 

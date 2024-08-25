@@ -1,7 +1,7 @@
 # All unpinned blobs below are extracted from google/cheetah/cheetah:14/UP1A.231005.007.A1/10762838:user/release-keys
 
 # Permissions
-product/etc/sysconfig/google-install-constraints-package-allowlist.xml
+-product/etc/sysconfig/google-install-constraints-package-allowlist.xml
 
 # Prebuilt APEXes
 system/system/apex/com.google.android.adbd.apex
