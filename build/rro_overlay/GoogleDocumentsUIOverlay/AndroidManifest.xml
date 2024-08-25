@@ -21,5 +21,5 @@
     android:versionName="1.0">
     <overlay android:targetPackage="com.google.android.documentsui"
       android:targetName="DocumentsUICustomization"
-      android:priority="0" />
+      android:priority="1" />
 </manifest>
