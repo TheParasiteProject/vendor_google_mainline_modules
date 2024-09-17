@@ -399,6 +399,7 @@ prebuilt_apex {
     source_apex_name: "com.googleandroid.profiling",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.profiling.capex",
+    filename: "com.google.android.profiling.capex",
     overrides: [
         "com.android.profiling",
     ],
