@@ -121,7 +121,9 @@ prebuilt_apex {
     apex_name: "com.android.adbd",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.adbd.apex",
-    overrides: ["com.android.adbd"],
+    overrides: [
+        "com.android.adbd",
+    ],
 }
 
 // AdServicesPrebuilt
@@ -130,7 +132,10 @@ prebuilt_apex {
     apex_name: "com.android.adservices",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.adservices.apex",
-    overrides: ["com.android.adservices"],
+    overrides: [
+        "AdServices",
+        "com.android.adservices",
+    ],
     exported_bootclasspath_fragments: ["com.android.adservices-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.adservices-systemserverclasspath-fragment"],
 }
@@ -141,7 +146,10 @@ prebuilt_apex {
     apex_name: "com.android.appsearch",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.appsearch.apex",
-    overrides: ["com.android.appsearch"],
+    overrides: [
+        "AppSearch",
+        "com.android.appsearch",
+    ],
     exported_bootclasspath_fragments: ["com.android.appsearch-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.appsearch-systemserverclasspath-fragment"],
 }
@@ -153,6 +161,7 @@ prebuilt_apex {
     owner: "google",
     src: "proprietary/system/apex/com.google.android.art.apex",
     overrides: [
+        "art",
         "com.android.art",
         "com.android.art.debug",
     ],
@@ -167,6 +176,7 @@ prebuilt_apex {
     owner: "google",
     src: "proprietary/system/apex/com.google.android.btservices.apex",
     overrides: [
+        "Bluetooth",
         "com.android.bluetooth",
         "com.android.bluetooth.debug",
         "com.android.btservices",
@@ -182,7 +192,10 @@ prebuilt_apex {
     apex_name: "com.android.cellbroadcast",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.cellbroadcast.apex",
-    overrides: ["com.android.cellbroadcast"],
+    overrides: [
+        "CellBroadcast",
+        "com.android.cellbroadcast",
+    ],
 }
 
 // ConfigInfrastructurePrebuilt
@@ -191,7 +204,10 @@ prebuilt_apex {
     apex_name: "com.android.configinfrastructure",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.configinfrastructure.apex",
-    overrides: ["com.android.configinfrastructure"],
+    overrides: [
+        "ConfigInfrastructure",
+        "com.android.configinfrastructure",
+    ],
     exported_bootclasspath_fragments: ["com.android.configinfrastructure-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.configinfrastructure-systemserverclasspath-fragment"],
 }
@@ -205,7 +221,10 @@ prebuilt_apex {
     ],
     owner: "google",
     src: "proprietary/system/apex/com.google.android.conscrypt.apex",
-    overrides: ["com.android.conscrypt"],
+    overrides: [
+        "conscrypt",
+        "com.android.conscrypt",
+    ],
     exported_bootclasspath_fragments: ["com.android.conscrypt-bootclasspath-fragment"],
 }
 
@@ -215,7 +234,10 @@ prebuilt_apex {
     apex_name: "com.android.devicelock",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.devicelock.apex",
-    overrides: ["com.android.devicelock"],
+    overrides: [
+        "DeviceLock",
+        "com.android.devicelock",
+    ],
     exported_bootclasspath_fragments: ["com.android.devicelock-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.devicelock-systemserverclasspath-fragment"],
 }
@@ -226,7 +248,9 @@ prebuilt_apex {
     apex_name: "com.android.extservices",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.extservices.apex",
-    overrides: ["com.android.extservices"],
+    overrides: [
+        "com.android.extservices",
+    ],
 }
 
 // HealthFitnessPrebuilt
@@ -235,7 +259,10 @@ prebuilt_apex {
     apex_name: "com.android.healthfitness",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.healthfitness.apex",
-    overrides: ["com.android.healthfitness"],
+    overrides: [
+        "HealthFitness",
+        "com.android.healthfitness",
+    ],
     exported_bootclasspath_fragments: ["com.android.healthfitness-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.healthfitness-systemserverclasspath-fragment"],
 }
@@ -249,7 +276,10 @@ prebuilt_apex {
     ],
     owner: "google",
     src: "proprietary/system/apex/com.google.android.ipsec.apex",
-    overrides: ["com.android.ipsec"],
+    overrides: [
+        "IPsec",
+        "com.android.ipsec",
+    ],
     exported_bootclasspath_fragments: ["com.android.ipsec-bootclasspath-fragment"],
 }
 
@@ -262,7 +292,10 @@ prebuilt_apex {
     ],
     owner: "google",
     src: "proprietary/system/apex/com.google.android.media.apex",
-    overrides: ["com.android.media"],
+    overrides: [
+        "Media",
+        "com.android.media",
+    ],
     exported_bootclasspath_fragments: ["com.android.media-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.media-systemserverclasspath-fragment"],
 }
@@ -273,7 +306,9 @@ prebuilt_apex {
     apex_name: "com.android.swcodec",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.media.swcodec.apex",
-    overrides: ["com.android.media.swcodec"],
+    overrides: [
+        "com.android.media.swcodec",
+    ],
 }
 
 // MediaProviderPrebuilt
@@ -285,7 +320,10 @@ prebuilt_apex {
     ],
     owner: "google",
     src: "proprietary/system/apex/com.google.android.mediaprovider.apex",
-    overrides: ["com.android.mediaprovider"],
+    overrides: [
+        "MediaProvider",
+        "com.android.mediaprovider",
+    ],
     exported_bootclasspath_fragments: ["com.android.mediaprovider-bootclasspath-fragment"],
 }
 
@@ -295,7 +333,9 @@ prebuilt_apex {
     apex_name: "com.android.neuralnetworks",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.neuralnetworks.apex",
-    overrides: ["com.android.neuralnetworks"],
+    overrides: [
+        "com.android.neuralnetworks",
+    ],
 }
 
 // OnDevicePersonalizationPrebuilt
@@ -304,7 +344,10 @@ prebuilt_apex {
     apex_name: "com.android.ondevicepersonalization",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.ondevicepersonalization.apex",
-    overrides: ["com.android.ondevicepersonalization"],
+    overrides: [
+        "OnDevicePersonalization",
+        "com.android.ondevicepersonalization",
+    ],
     exported_bootclasspath_fragments: ["com.android.ondevicepersonalization-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.ondevicepersonalization-systemserverclasspath-fragment"],
 }
@@ -315,7 +358,10 @@ prebuilt_apex {
     apex_name: "com.android.os.statsd",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.os.statsd.apex",
-    overrides: ["com.android.os.statsd"],
+    overrides: [
+        "StatsD",
+        "com.android.os.statsd",
+    ],
     exported_bootclasspath_fragments: ["com.android.os.statsd-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.os.statsd-systemserverclasspath-fragment"],
 }
@@ -330,7 +376,10 @@ prebuilt_apex {
     ],
     owner: "google",
     src: "proprietary/system/apex/com.google.android.permission.apex",
-    overrides: ["com.android.permission"],
+    overrides: [
+        "Permission",
+        "com.android.permission",
+    ],
     exported_bootclasspath_fragments: ["com.android.permission-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.permission-systemserverclasspath-fragment"],
 }
@@ -341,7 +390,9 @@ prebuilt_apex {
     apex_name: "com.android.resolv",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.resolv.apex",
-    overrides: ["com.android.resolv"],
+    overrides: [
+        "com.android.resolv",
+    ],
 }
 
 // RemoteKeyProvisioningPrebuilt
@@ -350,7 +401,10 @@ prebuilt_apex {
     apex_name: "com.android.rkpd",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.rkpd.apex",
-    overrides: ["com.android.rkpd"],
+    overrides: [
+        "RemoteKeyProvisioning",
+        "com.android.rkpd",
+    ],
     exported_systemserverclasspath_fragments: ["com.android.rkpd-systemserverclasspath-fragment"],
 }
 
@@ -360,7 +414,10 @@ prebuilt_apex {
     apex_name: "com.android.scheduling",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.scheduling.apex",
-    overrides: ["com.android.scheduling"],
+    overrides: [
+        "Scheduling",
+        "com.android.scheduling",
+    ],
     exported_bootclasspath_fragments: ["com.android.scheduling-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.scheduling-systemserverclasspath-fragment"],
 }
@@ -374,7 +431,10 @@ prebuilt_apex {
     ],
     owner: "google",
     src: "proprietary/system/apex/com.google.android.sdkext.apex",
-    overrides: ["com.android.sdkext"],
+    overrides: [
+        "SdkExtensions",
+        "com.android.sdkext",
+    ],
     exported_bootclasspath_fragments: ["com.android.sdkext-bootclasspath-fragment"],
 }
 
@@ -387,7 +447,9 @@ prebuilt_apex {
     ],
     owner: "google",
     src: "proprietary/system/apex/com.google.android.tethering.apex",
-    overrides: ["com.android.tethering"],
+    overrides: [
+        "com.android.tethering",
+    ],
     exported_bootclasspath_fragments: ["com.android.tethering-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.tethering-systemserverclasspath-fragment"],
 }
@@ -398,7 +460,9 @@ prebuilt_apex {
     apex_name: "com.android.tzdata",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.tzdata5.apex",
-    overrides: ["com.android.tzdata"],
+    overrides: [
+        "com.android.tzdata",
+    ],
 }
 
 // UwbPrebuilt
@@ -407,7 +471,10 @@ prebuilt_apex {
     apex_name: "com.android.uwb",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.uwb.apex",
-    overrides: ["com.android.uwb"],
+    overrides: [
+        "Uwb",
+        "com.android.uwb",
+    ],
     exported_bootclasspath_fragments: ["com.android.uwb-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.uwb-systemserverclasspath-fragment"],
 }
@@ -418,8 +485,10 @@ prebuilt_apex {
     apex_name: "com.android.virt",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.virt.apex",
-    overrides: ["com.android.virt"],
-//    exported_bootclasspath_fragments: ["com.android.virt-bootclasspath-fragment"],
+    overrides: [
+        "com.android.virt",
+    ],
+    //    exported_bootclasspath_fragments: ["com.android.virt-bootclasspath-fragment"],
 }
 
 // ComposPrebuilt
@@ -428,8 +497,10 @@ prebuilt_apex {
     apex_name: "com.android.compos",
     owner: "google",
     src: "proprietary/system_ext/apex/com.google.android.compos.apex",
-    overrides: ["com.android.compos"],
-//    exported_systemserverclasspath_fragments: ["com.android.compos-systemserverclasspath-fragment"],
+    overrides: [
+        "com.android.compos",
+    ],
+    //    exported_systemserverclasspath_fragments: ["com.android.compos-systemserverclasspath-fragment"],
     system_ext_specific: true,
 }
 
@@ -443,7 +514,10 @@ prebuilt_apex {
     ],
     owner: "google",
     src: "proprietary/system/apex/com.google.android.wifi.apex",
-    overrides: ["com.android.wifi"],
+    overrides: [
+        "Wifi",
+        "com.android.wifi",
+    ],
     exported_bootclasspath_fragments: ["com.android.wifi-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.wifi-systemserverclasspath-fragment"],
 }
@@ -454,5 +528,7 @@ prebuilt_apex {
     apex_name: "com.mainline.primary.libs",
     owner: "google",
     src: "proprietary/system/apex/com.google.mainline.primary.libs.apex",
-    overrides: ["com.mainline.primary.libs"],
+    overrides: [
+        "com.mainline.primary.libs",
+    ],
 }
