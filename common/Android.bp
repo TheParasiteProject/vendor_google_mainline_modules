@@ -107,7 +107,7 @@ android_app_import {
 }
 
 prebuilt_etc_xml {
-	name: "google-install-constraints-package-allowlist",
+	name: "google-install-constraints-package-allowlist.xml",
 	owner: "google/mainline_modules",
 	src: "proprietary/product/etc/sysconfig/google-install-constraints-package-allowlist.xml",
 	filename_from_src: true,
