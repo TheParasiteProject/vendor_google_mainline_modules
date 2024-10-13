@@ -19,6 +19,8 @@
 #   can support updatable APEX
 #
 # Flags for partners:
+#   MAINLINE_INCLUDE_RKP_MODULE := true or false
+#   - when it is true, RKP module will be added to PRODUCT_PACKAGES
 #   MAINLINE_INCLUDE_UWB_MODULE := true or false
 #   - when it is true, UWB module will be added to PRODUCT_PACKAGES
 #   MAINLINE_INCLUDE_WIFI_MODULE := true or false
@@ -62,6 +64,12 @@ PRODUCT_PACKAGES += \
     CellBroadcastReceiverOverlay \
     CellBroadcastServiceOverlay \
     GoogleMediaProviderOverlay
+
+PRODUCT_PACKAGES += \
+    NetworkStackGoogle
+
+PRODUCT_PACKAGES += \
+    GoogleNetworkStackOverlay
 
 # Additional Overlays
 PRODUCT_PACKAGES += \
@@ -204,10 +212,13 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.permission.apex
 
 # RemoteKeyProvisioning
+MAINLINE_INCLUDE_RKP_MODULE ?= false
+ifeq ($(MAINLINE_INCLUDE_RKP_MODULE),true)
 PRODUCT_PACKAGES += \
     com.google.android.rkpd
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.rkpd.apex
+endif
 
 # Scheduling
 PRODUCT_PACKAGES += \
@@ -259,11 +270,6 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.wifi.apex \
     system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk
 
-PRODUCT_PACKAGES += \
-    NetworkStackGoogle
-
-PRODUCT_PACKAGES += \
-    GoogleNetworkStackOverlay
 endif
 
 # sysconfig files
