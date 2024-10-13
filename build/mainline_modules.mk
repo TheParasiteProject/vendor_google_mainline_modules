@@ -19,6 +19,8 @@
 #   can support updatable APEX
 #
 # Flags for partners:
+#   MAINLINE_INCLUDE_DEVICELOCK_MODULE := true or false
+#   - when it is true, DEVICELOCK module will be added to PRODUCT_PACKAGES
 #   MAINLINE_INCLUDE_RKP_MODULE := true or false
 #   - when it is true, RKP module will be added to PRODUCT_PACKAGES
 #   MAINLINE_INCLUDE_UWB_MODULE := true or false
@@ -149,11 +151,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.resolv.apex
 
-# DeviceLock
+# Optional DeviceLock
+MAINLINE_INCLUDE_DEVICELOCK_MODULE ?= false
+ifeq ($(MAINLINE_INCLUDE_DEVICELOCK_MODULE),true)
 PRODUCT_PACKAGES += \
     com.google.android.devicelock
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.devicelock.apex
+endif
 
 # ExtServices - apex
 PRODUCT_PACKAGES += \
@@ -215,7 +220,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.permission.apex
 
-# RemoteKeyProvisioning
+# Optional RemoteKeyProvisioning
 MAINLINE_INCLUDE_RKP_MODULE ?= false
 ifeq ($(MAINLINE_INCLUDE_RKP_MODULE),true)
 PRODUCT_PACKAGES += \
