@@ -23,6 +23,8 @@
 #   - when it is true, DEVICELOCK module will be added to PRODUCT_PACKAGES
 #   MAINLINE_INCLUDE_RKP_MODULE := true or false
 #   - when it is true, RKP module will be added to PRODUCT_PACKAGES
+#   MAINLINE_INCLUDE_TETHERING_MODULE := true or false
+#   - when it is true, TETHERING module will be added to PRODUCT_PACKAGES
 #   MAINLINE_INCLUDE_UWB_MODULE := true or false
 #   - when it is true, UWB module will be added to PRODUCT_PACKAGES
 #   MAINLINE_INCLUDE_WIFI_MODULE := true or false
@@ -241,11 +243,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.sdkext.apex
 
-# Tethering
+# Optional Tethering
+MAINLINE_INCLUDE_TETHERING_MODULE ?= false
+ifeq ($(MAINLINE_INCLUDE_TETHERING_MODULE),true)
 PRODUCT_PACKAGES += \
     com.google.android.tethering
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.tethering.apex
+endif
 
 # Optional Uwb
 MAINLINE_INCLUDE_UWB_MODULE ?= false
