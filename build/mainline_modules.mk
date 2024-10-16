@@ -286,7 +286,7 @@ endif
 
 # sysconfig files
 PRODUCT_PACKAGES += \
-    google-install-constraints-package-allowlist \
+    google-install-constraints-package-allowlist.xml \
     GoogleCellBroadcast_config.xml \
     GoogleDocumentsUI_permissions.xml \
     GoogleNetworkStack_permissions.xml \
