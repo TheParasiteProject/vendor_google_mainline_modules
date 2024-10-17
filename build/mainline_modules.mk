@@ -65,11 +65,15 @@ PRODUCT_PACKAGES += \
     CellBroadcastServiceOverlay \
     GoogleMediaProviderOverlay
 
+ifeq ($(TARGET_SUPPORTS_GOOGLE_NETWORK_STACK),true)
 PRODUCT_PACKAGES += \
     NetworkStackGoogle
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk
 
 PRODUCT_PACKAGES += \
     GoogleNetworkStackOverlay
+endif
 
 # Additional Overlays
 PRODUCT_PACKAGES += \
@@ -267,9 +271,7 @@ ifeq ($(MAINLINE_INCLUDE_WIFI_MODULE),true)
 PRODUCT_PACKAGES += \
     com.google.android.wifi
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/apex/com.google.android.wifi.apex \
-    system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk
-
+    system/apex/com.google.android.wifi.apex
 endif
 
 # sysconfig files

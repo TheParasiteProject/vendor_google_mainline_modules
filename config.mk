@@ -11,6 +11,10 @@ TARGET_DISABLE_EPPE := true
 # Setup build characteristics
 PRODUCT_INCLUDE_TAGS := com.android.mainline mainline_module_prebuilt_monthly_release
 
+ifneq ($(TARGET_SUPPORTS_GOOGLE_NETWORK_STACK), false)
+TARGET_SUPPORTS_GOOGLE_NETWORK_STACK := true
+endif #TARGET_SUPPORTS_GOOGLE_NETWORK_STACK
+
 ifneq ($(MAINLINE_INCLUDE_RKP_MODULE), false)
 MAINLINE_INCLUDE_RKP_MODULE := true
 endif #MAINLINE_INCLUDE_RKP_MODULE
