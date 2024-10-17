@@ -256,7 +256,8 @@ ifeq ($(MAINLINE_INCLUDE_WIFI_MODULE),true)
 PRODUCT_PACKAGES += \
     com.google.android.wifi
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/apex/com.google.android.wifi.apex
+    system/apex/com.google.android.wifi.apex \
+    system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk
 
 PRODUCT_PACKAGES += \
     NetworkStackGoogle
@@ -276,7 +277,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.mainline.primary.libs.apex \
     system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk \
-    system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk \
     system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk \
     system/etc/permissions/GoogleCellBroadcast_config.xml \
     system/etc/permissions/GoogleDocumentsUI_permissions.xml \
