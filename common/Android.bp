@@ -115,6 +115,15 @@ prebuilt_etc_xml {
 	product_specific: true,
 }
 
+prebuilt_etc_xml {
+	name: "google-staged-installer-whitelist.xml",
+	owner: "google/mainline_modules",
+	src: "proprietary/product/etc/sysconfig/google-staged-installer-whitelist.xml",
+	filename_from_src: true,
+	sub_dir: "sysconfig",
+	product_specific: true,
+}
+
 // AdbdPrebuilt
 prebuilt_apex {
     name: "com.google.android.adbd",

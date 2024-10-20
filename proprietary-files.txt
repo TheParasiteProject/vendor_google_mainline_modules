@@ -2,6 +2,7 @@
 
 # Permissions
 -product/etc/sysconfig/google-install-constraints-package-allowlist.xml
+-product/etc/sysconfig/google-staged-installer-whitelist.xml
 
 # Prebuilt APEXes
 system/system/apex/com.google.android.adbd.apex
