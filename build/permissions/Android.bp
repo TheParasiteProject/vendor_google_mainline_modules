@@ -17,12 +17,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "google-staged-installer-whitelist.xml",
-    src: "google-staged-installer-whitelist.xml",
-    sub_dir: "sysconfig",
-}
-
-prebuilt_etc {
     name: "preinstalled-packages-com.google.android.providers.media.module.xml",
     src: "preinstalled-packages-com.google.android.providers.media.module.xml",
     sub_dir: "sysconfig",
