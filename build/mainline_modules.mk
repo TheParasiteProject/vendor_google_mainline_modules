@@ -65,8 +65,6 @@ PRODUCT_PACKAGES += \
 
 # Overlay packages for APEX-type modules
 PRODUCT_PACKAGES += \
-    CellBroadcastReceiverOverlay \
-    CellBroadcastServiceOverlay \
     GoogleMediaProviderOverlay
 
 ifeq ($(TARGET_SUPPORTS_GOOGLE_NETWORK_STACK),true)
@@ -77,11 +75,31 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 
 PRODUCT_PACKAGES += \
     GoogleNetworkStackOverlay
+
+# CellBroadcast
+PRODUCT_PACKAGES += \
+    CellBroadcastReceiverOverlay \
+    CellBroadcastServiceOverlay
+
+PRODUCT_PACKAGES += \
+    com.google.android.cellbroadcast
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/apex/com.google.android.cellbroadcast.apex
+
+# sysconfig files
+PRODUCT_PACKAGES += \
+    GoogleCellBroadcast_config.xml
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/etc/permissions/GoogleCellBroadcast_config.xml
+
+# Additional Overlays
+PRODUCT_PACKAGES += \
+    PartnerModulesSettingsOverlay
 endif
 
 # Additional Overlays
 PRODUCT_PACKAGES += \
-    PartnerModulesSettingsOverlay \
     PartnerModulesPermissionControllerOverlay
 
 # Configure APEX as updatable
@@ -128,12 +146,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.btservices.apex
 endif
-
-# CellBroadcast
-PRODUCT_PACKAGES += \
-    com.google.android.cellbroadcast
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/apex/com.google.android.cellbroadcast.apex
 
 # Conscrypt
 PRODUCT_PACKAGES += \
@@ -288,7 +300,6 @@ endif
 PRODUCT_PACKAGES += \
     google-install-constraints-package-allowlist.xml \
     google-staged-installer-whitelist.xml \
-    GoogleCellBroadcast_config.xml \
     GoogleDocumentsUI_permissions.xml \
     GoogleNetworkStack_permissions.xml \
     preinstalled-packages-com.google.android.providers.media.module.xml
@@ -297,7 +308,6 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.mainline.primary.libs.apex \
     system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk \
     system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk \
-    system/etc/permissions/GoogleCellBroadcast_config.xml \
     system/etc/permissions/GoogleDocumentsUI_permissions.xml \
     system/etc/permissions/GoogleExtServices_permissions.xml \
     system/etc/permissions/GoogleNetworkStack_permissions.xml \
