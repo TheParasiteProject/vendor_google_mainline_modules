@@ -1,0 +1,11 @@
+name: "RELEASE_APEX_CONTRIBUTIONS_SCHEDULING"
+value: {
+  string_value: "scheduling.google.contributions.prebuilt"
+}
+namespace: "android_UNKNOWN"
+description: ""
+workflow: MANUAL
+containers: "product"
+containers: "system"
+containers: "system_ext"
+containers: "vendor"

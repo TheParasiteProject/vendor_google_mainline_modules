@@ -1,0 +1,8 @@
+name: "RELEASE_APEX_CONTRIBUTIONS_PRIMARY_LIBS"
+value: {
+  string_value: "primarylibs.google.contributions.prebuilt"
+}
+namespace: "android_UNKNOWN"
+description: "flag to enable prebuilts for primary libs module (DCLA)"
+workflow: MANUAL
+containers: "system"

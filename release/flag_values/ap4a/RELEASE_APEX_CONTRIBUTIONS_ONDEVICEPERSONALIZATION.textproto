@@ -1,0 +1,11 @@
+name: "RELEASE_APEX_CONTRIBUTIONS_ONDEVICEPERSONALIZATION"
+value: {
+  string_value: "ondevicepersonalization.google.contributions.prebuilt"
+}
+namespace: "android_UNKNOWN"
+description: ""
+workflow: MANUAL
+containers: "product"
+containers: "system"
+containers: "system_ext"
+containers: "vendor"
