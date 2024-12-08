@@ -111,6 +111,23 @@ prebuilt_etc_xml {
 	product_specific: true,
 }
 
+java_library {
+    name: "nfc_google_flags_lib",
+    sdk_version: "system_current",
+    min_sdk_version: "33",
+    srcs: [
+        "lib/**/*.java",
+    ],
+    static_libs: [
+        "nfc_aconfig_flags_lib",
+    ],
+    installable: false,
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.nfcservices",
+    ],
+}
+
 // AdbdPrebuilt
 prebuilt_apex {
     name: "com.google.android.adbd",
@@ -333,6 +350,12 @@ prebuilt_apex {
         "NfcNci",
         "NfcNciApex",
         "com.android.nfcservices",
+    ],
+    required: [
+        // Provide a default libnfc-nci.conf in /system/etc for devices that
+        // does not ship one in /product
+        "libnfc-nci.conf-default",
+        "nfc_google_flags_lib",
     ],
 }
 
