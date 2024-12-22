@@ -21,15 +21,17 @@ system/system/apex/com.google.android.media.apex
 system/system/apex/com.google.android.media.swcodec.apex
 system/system/apex/com.google.android.mediaprovider.apex
 system/system/apex/com.google.android.neuralnetworks.apex
+system/system/apex/com.google.android.nfcservices.apex
 system/system/apex/com.google.android.ondevicepersonalization.apex
 system/system/apex/com.google.android.os.statsd.apex
 system/system/apex/com.google.android.permission.apex
+system/system/apex/com.google.android.profiling.capex
 system/system/apex/com.google.android.resolv.apex
 system/system/apex/com.google.android.rkpd.apex
 system/system/apex/com.google.android.scheduling.apex
 system/system/apex/com.google.android.sdkext.apex
 system/system/apex/com.google.android.tethering.apex
-system/system/apex/com.google.android.tzdata5.apex
+system/system/apex/com.google.android.tzdata6.apex
 system/system/apex/com.google.android.uwb.apex
 system/system/apex/com.google.android.virt.apex
 system/system/apex/com.google.android.wifi.apex
@@ -65,4 +67,3 @@ product/app/PrebuiltGoogleAdservicesTvp/PrebuiltGoogleAdservicesTvp.apk;PRESIGNE
 
 # Diagnostics/Telemetry
 product/app/PrebuiltGoogleTelemetryTvp/PrebuiltGoogleTelemetryTvp.apk;PRESIGNED
-product/priv-app/HelpRtcPrebuilt/HelpRtcPrebuilt.apk;PRESIGNED

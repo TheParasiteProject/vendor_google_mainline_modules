@@ -216,6 +216,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.neuralnetworks.apex
 
+# Optional Nfc
+MAINLINE_INCLUDE_NFCSERVICES_MODULE ?= false
+ifeq ($(MAINLINE_INCLUDE_NFCSERVICES_MODULE),true)
+PRODUCT_PACKAGES += \
+    com.google.android.nfcservices
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/apex/com.google.android.nfcservices.apex
+endif
+
 # OnDevicePersonalization
 PRODUCT_PACKAGES += \
     com.google.android.ondevicepersonalization
@@ -233,6 +242,15 @@ PRODUCT_PACKAGES += \
     com.google.android.permission
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/apex/com.google.android.permission.apex
+
+# Optional Profiling
+MAINLINE_INCLUDE_PROFILING_MODULE ?= false
+ifeq ($(MAINLINE_INCLUDE_PROFILING_MODULE),true)
+PRODUCT_PACKAGES += \
+    com.google.android.profiling
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/apex/com.google.android.profiling.capex
+endif
 
 # Optional RemoteKeyProvisioning
 MAINLINE_INCLUDE_RKP_MODULE ?= false
