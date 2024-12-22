@@ -93,19 +93,6 @@ android_app_import {
 	product_specific: true,
 }
 
-android_app_import {
-	name: "HelpRtcPrebuilt",
-	owner: "google/mainline_modules",
-	apk: "proprietary/product/priv-app/HelpRtcPrebuilt/HelpRtcPrebuilt.apk",
-	preprocessed: true,
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
 prebuilt_etc_xml {
 	name: "google-install-constraints-package-allowlist.xml",
 	owner: "google/mainline_modules",
@@ -336,6 +323,20 @@ prebuilt_apex {
     exported_bootclasspath_fragments: ["com.android.mediaprovider-bootclasspath-fragment"],
 }
 
+// NfcNciPrebuilt
+prebuilt_apex {
+    name: "com.google.android.nfcservices",
+    apex_name: "com.android.nfcservices",
+    owner: "google",
+    src: "proprietary/system/apex/com.google.android.nfcservices.apex",
+    overrides: [
+        "NfcNci",
+        "NfcNciApex",
+        "com.android.nfcservices",
+    ],
+    exported_bootclasspath_fragments: ["com.android.nfcservices-bootclasspath-fragment"],
+}
+
 // NNApiPrebuilt
 prebuilt_apex {
     name: "com.google.android.neuralnetworks",
@@ -391,6 +392,19 @@ prebuilt_apex {
     ],
     exported_bootclasspath_fragments: ["com.android.permission-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.permission-systemserverclasspath-fragment"],
+}
+
+// ProfilingPrebuilt
+prebuilt_apex {
+    name: "com.google.android.profiling",
+    apex_name: "com.android.profiling",
+    owner: "google",
+    src: "proprietary/system/apex/com.google.android.permission.capex",
+    overrides: [
+        "com.android.profiling",
+    ],
+    exported_bootclasspath_fragments: ["com.android.profiling-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.profiling-systemserverclasspath-fragment"],
 }
 
 // DnsResolverPrebuilt
@@ -465,10 +479,10 @@ prebuilt_apex {
 
 // TimezoneDataPrebuilt
 prebuilt_apex {
-    name: "com.google.android.tzdata5",
+    name: "com.google.android.tzdata6",
     apex_name: "com.android.tzdata",
     owner: "google",
-    src: "proprietary/system/apex/com.google.android.tzdata5.apex",
+    src: "proprietary/system/apex/com.google.android.tzdata6.apex",
     overrides: [
         "com.android.tzdata",
     ],

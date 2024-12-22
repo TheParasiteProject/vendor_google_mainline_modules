@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <bool name="config_dhcp_client_hostname">true</bool>
+    <bool name="config_force_enable_apfv6_nd_offload">true</bool>
 </resources>
