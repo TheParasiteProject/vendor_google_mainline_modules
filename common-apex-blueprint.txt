@@ -221,7 +221,6 @@ prebuilt_apex {
         "NfcNciApex",
         "com.android.nfcservices",
     ],
-    exported_bootclasspath_fragments: ["com.android.nfcservices-bootclasspath-fragment"],
 }
 
 // NNApiPrebuilt
@@ -290,8 +289,6 @@ prebuilt_apex {
     overrides: [
         "com.android.profiling",
     ],
-    exported_bootclasspath_fragments: ["com.android.profiling-bootclasspath-fragment"],
-    exported_systemserverclasspath_fragments: ["com.android.profiling-systemserverclasspath-fragment"],
 }
 
 // DnsResolverPrebuilt
