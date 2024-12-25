@@ -285,7 +285,7 @@ prebuilt_apex {
     name: "com.google.android.profiling",
     apex_name: "com.android.profiling",
     owner: "google",
-    src: "proprietary/system/apex/com.google.android.permission.capex",
+    src: "proprietary/system/apex/com.google.android.profiling.capex",
     overrides: [
         "com.android.profiling",
     ],
