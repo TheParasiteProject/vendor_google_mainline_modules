@@ -1,0 +1,6 @@
+values: [
+    {
+        name: "RELEASE_DEFAULT_MODULE_BUILD_FROM_SOURCE"
+        value: ""
+    }
+]
