@@ -108,7 +108,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Mainline modules - APEX type
 PRODUCT_PACKAGES += \
     com.google.mainline.primary.libs \
-    com.google.android.tzdata5
+    com.google.android.tzdata6
 
 # adding compressed APEX based on options
 

@@ -674,7 +674,7 @@ module_apex_prebuilt {
 // TimezoneDataPrebuilt
 module_apex_prebuilt {
     name: "com.google.android.tzdata6",
-    source_apex_name: "com.google.android.tzdata",
+    source_apex_name: "com.google.android.tzdata6",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.tzdata6.apex",
     overrides: [
