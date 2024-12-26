@@ -1,7 +1,7 @@
 // AdbdPrebuilt
 prebuilt_apex {
     name: "com.google.android.adbd",
-    apex_name: "com.android.adbd",
+    source_apex_name: "com.google.android.adbd",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.adbd.apex",
     overrides: [
@@ -12,7 +12,7 @@ prebuilt_apex {
 // AdServicesPrebuilt
 prebuilt_apex {
     name: "com.google.android.adservices",
-    apex_name: "com.android.adservices",
+    source_apex_name: "com.google.android.adservices",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.adservices.apex",
     overrides: [
@@ -26,7 +26,7 @@ prebuilt_apex {
 // AppSearchPrebuilt
 prebuilt_apex {
     name: "com.google.android.appsearch",
-    apex_name: "com.android.appsearch",
+    source_apex_name: "com.google.android.appsearch",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.appsearch.apex",
     overrides: [
@@ -40,7 +40,7 @@ prebuilt_apex {
 // ArtPrebuilt
 prebuilt_apex {
     name: "com.google.android.art",
-    apex_name: "com.android.art",
+    source_apex_name: "com.google.android.art",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.art.apex",
     overrides: [
@@ -55,7 +55,7 @@ prebuilt_apex {
 // BluetoothPrebuilt
 prebuilt_apex {
     name: "com.google.android.btservices",
-    apex_name: "com.android.btservices",
+    source_apex_name: "com.google.android.btservices",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.btservices.apex",
     overrides: [
@@ -72,7 +72,7 @@ prebuilt_apex {
 // CellBroadcastPrebuilt
 prebuilt_apex {
     name: "com.google.android.cellbroadcast",
-    apex_name: "com.android.cellbroadcast",
+    source_apex_name: "com.google.android.cellbroadcast",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.cellbroadcast.apex",
     overrides: [
@@ -84,7 +84,7 @@ prebuilt_apex {
 // ConfigInfrastructurePrebuilt
 prebuilt_apex {
     name: "com.google.android.configinfrastructure",
-    apex_name: "com.android.configinfrastructure",
+    source_apex_name: "com.google.android.configinfrastructure",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.configinfrastructure.apex",
     overrides: [
@@ -98,7 +98,7 @@ prebuilt_apex {
 // ConscryptPrebuilt
 prebuilt_apex {
     name: "com.google.android.conscrypt",
-    apex_name: "com.android.conscrypt",
+    source_apex_name: "com.google.android.conscrypt",
     required: [
         "conscrypt.com.android.conscrypt",
     ],
@@ -114,7 +114,7 @@ prebuilt_apex {
 // DeviceLockPrebuilt
 prebuilt_apex {
     name: "com.google.android.devicelock",
-    apex_name: "com.android.devicelock",
+    source_apex_name: "com.google.android.devicelock",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.devicelock.apex",
     overrides: [
@@ -128,7 +128,7 @@ prebuilt_apex {
 // ExtServicesPrebuilt
 prebuilt_apex {
     name: "com.google.android.extservices",
-    apex_name: "com.android.extservices",
+    source_apex_name: "com.google.android.extservices",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.extservices.apex",
     overrides: [
@@ -139,7 +139,7 @@ prebuilt_apex {
 // HealthFitnessPrebuilt
 prebuilt_apex {
     name: "com.google.android.healthfitness",
-    apex_name: "com.android.healthfitness",
+    source_apex_name: "com.google.android.healthfitness",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.healthfitness.apex",
     overrides: [
@@ -153,7 +153,7 @@ prebuilt_apex {
 // IKEPrebuilt
 prebuilt_apex {
     name: "com.google.android.ipsec",
-    apex_name: "com.android.ipsec",
+    source_apex_name: "com.google.android.ipsec",
     required: [
         "android.net.ipsec.ike.com.android.ipsec",
     ],
@@ -169,7 +169,7 @@ prebuilt_apex {
 // MediaFrameworkPrebuilt
 prebuilt_apex {
     name: "com.google.android.media",
-    apex_name: "com.android.media",
+    source_apex_name: "com.google.android.media",
     required: [
         "updatable-media.com.android.media",
     ],
@@ -186,7 +186,7 @@ prebuilt_apex {
 // MediaSwCodecPrebuilt
 prebuilt_apex {
     name: "com.google.android.media.swcodec",
-    apex_name: "com.android.swcodec",
+    source_apex_name: "com.google.android.swcodec",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.media.swcodec.apex",
     overrides: [
@@ -197,7 +197,7 @@ prebuilt_apex {
 // MediaProviderPrebuilt
 prebuilt_apex {
     name: "com.google.android.mediaprovider",
-    apex_name: "com.android.mediaprovider",
+    source_apex_name: "com.google.android.mediaprovider",
     required: [
         "framework-mediaprovider.com.android.mediaprovider",
     ],
@@ -213,7 +213,7 @@ prebuilt_apex {
 // NfcNciPrebuilt
 prebuilt_apex {
     name: "com.google.android.nfcservices",
-    apex_name: "com.android.nfcservices",
+    source_apex_name: "com.google.android.nfcservices",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.nfcservices.apex",
     overrides: [
@@ -226,7 +226,7 @@ prebuilt_apex {
 // NNApiPrebuilt
 prebuilt_apex {
     name: "com.google.android.neuralnetworks",
-    apex_name: "com.android.neuralnetworks",
+    source_apex_name: "com.google.android.neuralnetworks",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.neuralnetworks.apex",
     overrides: [
@@ -237,7 +237,7 @@ prebuilt_apex {
 // OnDevicePersonalizationPrebuilt
 prebuilt_apex {
     name: "com.google.android.ondevicepersonalization",
-    apex_name: "com.android.ondevicepersonalization",
+    source_apex_name: "com.google.android.ondevicepersonalization",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.ondevicepersonalization.apex",
     overrides: [
@@ -251,7 +251,7 @@ prebuilt_apex {
 // StatsdPrebuilt
 prebuilt_apex {
     name: "com.google.android.os.statsd",
-    apex_name: "com.android.os.statsd",
+    source_apex_name: "com.google.android.os.statsd",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.os.statsd.apex",
     overrides: [
@@ -265,7 +265,7 @@ prebuilt_apex {
 // PermissionPrebuilt
 prebuilt_apex {
     name: "com.google.android.permission",
-    apex_name: "com.android.permission",
+    source_apex_name: "com.google.android.permission",
     required: [
         "framework-permission.com.android.permission",
         "service-permission.com.android.permission",
@@ -283,7 +283,7 @@ prebuilt_apex {
 // ProfilingPrebuilt
 prebuilt_apex {
     name: "com.google.android.profiling",
-    apex_name: "com.android.profiling",
+    source_apex_name: "com.google.android.profiling",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.profiling.capex",
     overrides: [
@@ -294,7 +294,7 @@ prebuilt_apex {
 // DnsResolverPrebuilt
 prebuilt_apex {
     name: "com.google.android.resolv",
-    apex_name: "com.android.resolv",
+    source_apex_name: "com.google.android.resolv",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.resolv.apex",
     overrides: [
@@ -305,7 +305,7 @@ prebuilt_apex {
 // RemoteKeyProvisioningPrebuilt
 prebuilt_apex {
     name: "com.google.android.rkpd",
-    apex_name: "com.android.rkpd",
+    source_apex_name: "com.google.android.rkpd",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.rkpd.apex",
     overrides: [
@@ -318,7 +318,7 @@ prebuilt_apex {
 // SchedulingPrebuilt
 prebuilt_apex {
     name: "com.google.android.scheduling",
-    apex_name: "com.android.scheduling",
+    source_apex_name: "com.google.android.scheduling",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.scheduling.apex",
     overrides: [
@@ -332,7 +332,7 @@ prebuilt_apex {
 // SdkExtensionsPrebuilt
 prebuilt_apex {
     name: "com.google.android.sdkext",
-    apex_name: "com.android.sdkext",
+    source_apex_name: "com.google.android.sdkext",
     required: [
         "framework-sdkextensions.com.android.sdkext",
     ],
@@ -348,7 +348,7 @@ prebuilt_apex {
 // TetheringPrebuilt
 prebuilt_apex {
     name: "com.google.android.tethering",
-    apex_name: "com.android.tethering",
+    source_apex_name: "com.google.android.tethering",
     required: [
         "framework-tethering.com.android.tethering",
     ],
@@ -364,7 +364,7 @@ prebuilt_apex {
 // TimezoneDataPrebuilt
 prebuilt_apex {
     name: "com.google.android.tzdata6",
-    apex_name: "com.android.tzdata",
+    source_apex_name: "com.google.android.tzdata",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.tzdata6.apex",
     overrides: [
@@ -375,7 +375,7 @@ prebuilt_apex {
 // UwbPrebuilt
 prebuilt_apex {
     name: "com.google.android.uwb",
-    apex_name: "com.android.uwb",
+    source_apex_name: "com.google.android.uwb",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.uwb.apex",
     overrides: [
@@ -389,7 +389,7 @@ prebuilt_apex {
 // VirtualizationPrebuilt
 prebuilt_apex {
     name: "com.google.android.virt",
-    apex_name: "com.android.virt",
+    source_apex_name: "com.google.android.virt",
     owner: "google",
     src: "proprietary/system/apex/com.google.android.virt.apex",
     overrides: [
@@ -401,7 +401,7 @@ prebuilt_apex {
 // ComposPrebuilt
 prebuilt_apex {
     name: "com.google.android.compos",
-    apex_name: "com.android.compos",
+    source_apex_name: "com.google.android.compos",
     owner: "google",
     src: "proprietary/system_ext/apex/com.google.android.compos.apex",
     overrides: [
@@ -414,7 +414,7 @@ prebuilt_apex {
 // WiFiPrebuilt
 prebuilt_apex {
     name: "com.google.android.wifi",
-    apex_name: "com.android.wifi",
+    source_apex_name: "com.google.android.wifi",
     required: [
         "framework-wifi.com.android.wifi",
         "service-wifi.com.android.wifi",
@@ -432,7 +432,7 @@ prebuilt_apex {
 // DynamicCommonLibrariesPrebuilt
 prebuilt_apex {
     name: "com.google.mainline.primary.libs",
-    apex_name: "com.mainline.primary.libs",
+    source_apex_name: "com.google.mainline.primary.libs",
     owner: "google",
     src: "proprietary/system/apex/com.google.mainline.primary.libs.apex",
     overrides: [
