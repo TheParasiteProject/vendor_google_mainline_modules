@@ -14,7 +14,13 @@ You should fix VINTF entry missing errors, dlopen failures, system app crashes b
 
 ### Add support for Google Play system updates
 
-First, you need to track [prebuilts/modules_sdk](https://gitlab.com/someone5678/prebuilts_module_sdk) in your manifest,<br>
+First, you need to cherry-pick commit into build/soong.
+
+```sh
+git remote add apex https://github.com/TheParasiteProject/build_soong.git && git cherry-pick 3216c45d3b752edd6c8d19fbee311d71dedef7ed
+```
+
+Next, you need to track [prebuilts/modules_sdk](https://gitlab.com/someone5678/prebuilts_module_sdk) in your manifest,<br>
 which should replaces repos under `prebuilts/module_sdk/*`.
 
 You need to include the `config.mk`'s path to your `device.mk`
